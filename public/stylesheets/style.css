@@ -211,7 +211,6 @@ BASE-----------------------------------------------
 .list--footer{
     display: flex;
     flex-direction: column;
-
 }
 
 .item--footer{
@@ -255,4 +254,166 @@ BASE-----------------------------------------------
     color: #005abd;
     font-size: 4rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .header{
+        padding: 2.5rem;
+    }
+
+    .row--logo{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .row{
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .text--logo{
+        text-align: right;
+        margin-left: -.1rem;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    .list--nav,
+    .list--user{
+        display: flex;
+        justify-content:space-between;
+        text-transform:capitalize;
+    }
+
+    .list--nav{
+        width:40%;
+    }
+
+    .list--user{
+        width:48%;
+    }
+
+    .nav-bar--header{
+        justify-content: space-between;
+    }
+
+
+    .btn--nav,
+    .btn--user{
+        font-size: 1.6rem;
+    }
+
+    .form--header{
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-bar{
+        width: 60%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .btn--search{
+        background-color: white;
+    }
+
+    .list--compras,
+    .list--ofertas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item--compras,
+    item--ofertas{
+        width: 48%;
+    }
+
+    .fa-truck{
+        left: 27rem;
+    }
+
+
+    .list--footer{
+        align-items: center;
+    }
+
+    .item--footer{
+        width: 80vw;
+    }
+
+    .item--footer:last-child{
+        margin-left: -38rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .body--index{
+        overflow-x:hidden;
+    }
+    .header{
+        padding:4rem 6rem;
+    }
+
+    .row{
+       width:auto;
+    }
+    
+    .search-bar{
+        width:75%;
+        padding:.5rem;
+    }
+
+    .input--search{
+        width:100%;
+    }
+
+    .list--nav{
+        width:25%;
+    }
+
+    .list--user{
+        width:25%;
+    }
+
+    .main--index section{
+        padding: 0 6rem;
+    }
+
+    .img--banner{
+        margin-bottom: 4rem;
+    }
+
+    .item--compras,
+    item--ofertas{
+        width: 23%;
+    }
+
+    .fa-truck{
+        left: 21rem;
+        font-size:1.2rem;
+        top:-2rem;
+    }
+
+
+    .list--footer{
+        flex-direction: row;
+        padding:4rem 6rem;
+        border-bottom: .1rem solid #edebe9;
+    }
+
+    .item--footer:last-child{
+        position: relative;
+        top: 15rem;
+        left: -87.5rem;
+        padding: 2rem 0;
+    }
 }
